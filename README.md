@@ -51,4 +51,32 @@ if (lastButtonState == LOW && currentButtonState == HIGH) {
       break;
   }
 }
-<img width="421" height="365" alt="image" src="https://github.com/user-attachments/assets/a751b184-9a29-460a-90f5-d5d800f95b00" />
+
+```
+### 😠 Angry Eyes Display
+```cpp
+void angry_eyes() {
+  display.clearDisplay();
+  int tri_width = 40, tri_height = 35, center_y = 32;
+
+  display.fillTriangle(21, center_y + tri_height / 2, 21, center_y - tri_height / 2, 21 + tri_width, center_y + tri_height / 2, SSD1306_WHITE);
+  display.fillTriangle(107, center_y + tri_height / 2, 107, center_y - tri_height / 2, 107 - tri_width, center_y + tri_height / 2, SSD1306_WHITE);
+
+  display.display();
+}
+```
+### 🔊 Sound (Buzzer)
+```cpp
+void playBeep(int freq, int duration) {
+  tone(BUZZER_PIN, freq);
+  delay(duration);
+  noTone(BUZZER_PIN);
+}
+
+void playRandomBeeps(int count) {
+  for (int i = 0; i < count; i++) {
+    playBeep(random(300, 1200), random(80, 150));
+    delay(random(50, 150)); 
+  }
+}
+```
