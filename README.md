@@ -9,7 +9,7 @@ RoBOBOt reacts to different types of touch using a capacitive sensor:
 - A **more energetic touch** triggers playful behavior and lively sound effects.
 
 By combining visual expressions (via an OLED display), motion (using two servo motors), and sound (through buzzers), RoBOBOt aims to offer emotional support, especially to children learning to express and recognize feelings, or to adults seeking a soothing presence.
-<img width="421" height="365" alt="image" src="https://github.com/user-attachments/assets/2fc671b9-4f1f-433d-b224-185b997c9c23" />
+
 
 ## 🧰 Hardware Components
 
